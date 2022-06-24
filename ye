@@ -1,0 +1,12 @@
+local abc = 'abcdefghijklmnopqrstuvwxyz'
+local emo = {"😆","🙂","🤗","😱","🤢","🙄","🗿","🥺","😒","👿","👍","🎂","💀","🤤","🤮","😷","👽","🐒","🎈","🎗","🎟","💨","💞","💜","🛑","💥"}
+local code = [[
+-- ur code here lmao
+]]
+print(#emo,#abc)
+for i = 1,#abc,1 do
+   code = string.gsub(code,string.sub(abc,i,i),"LEAN"..emo[i])
+end
+
+print("go check the workspace folder")
+writefile("output.txt",code)
